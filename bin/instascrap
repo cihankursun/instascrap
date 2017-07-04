@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require 'instascrap'
+instascrap = Instagram.new(ARGV[0])
+puts "What you want? img or mp4 \n"
+STDOUT.flush
+val = gets.chomp
+if val == "img"
+  puts "Please push image link"
+  $url= gets.chomp
+  instascrap.download_img
+elsif val == "mp4"
+  puts "Please push video link"
+  $url = gets.chomp
+  instascrap.download_videos
+else
+  puts "Please push correct link"
+end
