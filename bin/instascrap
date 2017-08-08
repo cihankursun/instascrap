@@ -14,5 +14,5 @@ elsif val == "mp4"
   $url = gets.chomp
   instascrap.download_videos
 else
-  puts "Please push correct link"
+  puts "Please choose IMG or MP4"
 end

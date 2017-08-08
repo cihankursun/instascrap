@@ -20,7 +20,7 @@ class Instagram
 
                # parsing with nokogiri
       document = Nokogiri::HTML(browser.html)
-      link = document.search("div._jjzlb img")[0]["src"]
+      link = document.search("div._4rbun img")[0]["src"]
       photo = browser.goto(link)
       FileUtils.mkdir_p 'ig_photos'
       FileUtils.cd 'ig_photos'
@@ -50,7 +50,7 @@ class Instagram
 
       # parsing with nokogiri
       document = Nokogiri::HTML(browser.html)
-      link = document.search("video._c8hkj")[0]["src"]
+      link = document.search("video._mck9w")[0]["src"]
       video = browser.goto(link)
       FileUtils.mkdir_p 'ig_movies'
       FileUtils.cd 'ig_movies'
