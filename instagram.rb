@@ -1,4 +1,3 @@
-require 'open-uri'
 require 'watir'
 require 'nokogiri'
 require 'fileutils'
@@ -70,3 +69,20 @@ class Instagram
     puts "videos: #{pwd}/#{getting_video.filename}"
   end
 end
+
+instagram = Instagram.new(ARGV[0])
+puts "What you want? img or mp4 \n"
+STDOUT.flush
+val = gets.chomp
+if val == "img" 
+  puts "Please push image link"
+  $url= gets.chomp
+  instagram.download_img
+elsif val == "mp4" 
+  puts "Please push video link"
+  $url = gets.chomp
+  instagram.download_videos
+else
+  puts "Please push correct link"
+end
+

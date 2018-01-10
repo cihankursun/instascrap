@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'instascrap'
-  s.version     = '0.0.5'
-  s.date        = '2017-07-01'
+  s.version     = '0.0.7'
+  s.date        = '2017-08-27'
   s.summary     = 'instascrap'
   s.description = 'instascrap gem allows to download image and videos'
   s.authors     = ['Cihan KURSUN']
